@@ -1,0 +1,49 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>TensorFlow Java API object detection sample</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+            integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+            integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+    <body>
+        <div class="container">
+            <div th:if="${originalName}" class="row mt-4">
+                <p>
+                     <a href="" class="btn btn-secondary">Voltar</a>
+                    <span>Imagem: </span><span th:text="${originalName}"/><span> verificada!</span>
+                </p>
+            </div>
+            <div class="row">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Imagem original</th>
+                            <th>Análise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img th:src="${originalImage}" th:title="${originalImage}" th:alt="${originalImage}" th:width="416" /></td>
+                            <td><img th:src="${predictedImage}" th:title="${predictedImage}" th:alt="${predictedImage}" th:width="416" /></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <ul>
+                                    <th:block th:each="recognition : ${recognitions}">
+                                        <li><span th:text="${recognition.title}"></span><span> - </span><span th:text="${(recognition.confidence*100)+'%'}"></span></li>
+                                    </th:block>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
