@@ -15,7 +15,7 @@ Condições :
 - Devem ser inseridos os seguintes arquivos na raiz do projeto para o algoritmo - https://1drv.ms/u/s!AuGR50rQO6NlgsxvtU8DrPuMDoklCg?e=pmCgW5
 
 
-**Copnpilar com o Gradle**
+**Compilar com o Gradle**
 Compile the code by typing `./gradlew clean build` in the terminal window.<br/>
 Run it with the command `./gradlew bootRun`
 
