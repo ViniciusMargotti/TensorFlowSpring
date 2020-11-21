@@ -1,6 +1,11 @@
 # TensorFlowSpring
 Detecção de objeto do lado do servidor. Ele usa a API TensorFlow Java com um modelo YOLOv2 treinado. O aplicativo de servidor é implementado com Spring Framework e é construído pelo Gradle.
 
+#### Demo da aplicação
+
+![Alt Text](gif.gif)
+
+
 #### Compilar e executar
 
 Condições :
@@ -16,6 +21,3 @@ Run it with the command `./gradlew bootRun`
 
 Open the [http://localhost:8080](http://localhost:8080) and you should see the webpage.<br/>
 
-#### Demo da aplicação
-
-![Alt Text](gif.gif)
