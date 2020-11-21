@@ -7,6 +7,7 @@ Condições :
 - Java JDK 1.8 or greater;
 - TensorFlow 1.6 or grater;
 - Git version control system;
+ Devem ser inseridos os seguintes arquivos na raiz do projeto para o algoritmo - https://1drv.ms/u/s!AuGR50rQO6NlgsxvtU8DrPuMDoklCg?e=pmCgW5
 
 
 **Copnpilar com o Gradle**
