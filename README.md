@@ -18,4 +18,4 @@ Open the [http://localhost:8080](http://localhost:8080) and you should see the w
 
 #### Demo da aplicação
 
-publicado em  **Heroku** with a tiny-yolo model: 
+![Alt Text](gif.gif)
